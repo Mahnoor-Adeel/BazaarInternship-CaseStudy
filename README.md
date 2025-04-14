@@ -63,6 +63,14 @@ This schema was originally designed for a single kiryana (general) store, ensuri
 
 > The schema ensures organized product tracking, variant-level control, and a full history of stock movements — making it perfect for small-scale yet structured inventory systems.
 
+### Stage 2: Expanding to Centralized Database System
+
+To support multiple stores, a centralized global database was introduced. It handles product information, cross-store operations, and centralized logs.
+
+📌 **ER Diagram:**  
+
+
+> This visual illustrates how products, SKUs, stores, users, and stock logs are interconnected in the global setup.
 
 
 

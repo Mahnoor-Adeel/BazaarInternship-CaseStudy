@@ -33,8 +33,18 @@ To get started with the Inventory System, follow the steps below:
 ### 1. Clone the Repository
 Clone the repository to your local machine:
 ```bash
-git clone https://github.com/YOUR_USERNAME/Inventory-System.git
+git clone https://github.com/Mahnoor-Adeel/Inventory-System.git
 cd Inventory-System
+```
+### 2. Install Dependencies
+
+Next, you need to install all the required dependencies. Run the following command to download all necessary packages:
+
+```bash
+npm install
+'''
+
+
 
 
 

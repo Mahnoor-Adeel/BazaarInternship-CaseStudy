@@ -74,6 +74,32 @@ To support multiple stores, a centralized global database was introduced. It han
 
 > This visual illustrates how products, SKUs, stores, users, and stock logs are interconnected in the global setup.
 
+## 🧠 Strengths of the Project
 
+This project isn't just another inventory system — it's built with precision, real-world usability, and scalability in mind:
 
+### 🌍 Dual Database Design
+- Combines the **speed and offline capability** of local SQLite with the **reporting power** of a centralized PostgreSQL database.
+- Local DB handles real-time store operations; the global DB handles reporting, analytics, and multi-store management.
+
+### 🔐 Role-Based Access Control
+- **Store Admins**: Access only their store’s data.
+- **Global Admin**: Access to all data across all stores.
+- Routes are guarded by middleware ensuring secure, scoped access.
+
+### 🧼 Data Integrity via Soft Deletes
+- SKUs, Variants, and Stores are soft-deleted (`is_active = false`) to preserve logs and historical accuracy.
+- Ensures you never lose valuable audit data or historical insights.
+
+### 🧩 Clean SKU Modeling
+- Products are broken down into **variants and options** (size, color, etc.) while stock quantity is handled in a separate table.
+- Keeps your schema normalized and flexible.
+
+### 📊 Future-Ready Reports
+- APIs support filtering by **store, SKU, and date range** — perfect for trend analysis and inventory optimization.
+- Easy to plug into Power BI or custom dashboards later.
+
+### 🔄 API-Based Sync Architecture
+- Designed for syncing stock logs between local and global databases via API calls.
+- Allows for future support of cron jobs, queues, or message brokers.
 

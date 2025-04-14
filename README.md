@@ -42,7 +42,13 @@ Next, you need to install all the required dependencies. Run the following comma
 
 ```bash
 npm install
-'''
+```
+
+### 3. View Global Database on Supabase
+The global product catalog and inventory data are stored in a PostgreSQL database hosted on Supabase. To view and interact with the database, follow these steps:
+
+1. Go to the Supabase Dashboard and log in.
+2. Navigate to your project: https://supabase.com/dashboard/project/ywganhdenzexztzbpkqh
 
 
 

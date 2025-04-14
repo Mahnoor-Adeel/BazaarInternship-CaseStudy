@@ -69,6 +69,8 @@ To support multiple stores, a centralized global database was introduced. It han
 
 📌 **ER Diagram:**  
 
+![Global_DB Schema](./supabase-schema-ywganhdenzexztzbpkqh.png)
+
 
 > This visual illustrates how products, SKUs, stores, users, and stock logs are interconnected in the global setup.
 

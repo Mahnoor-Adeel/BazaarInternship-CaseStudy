@@ -50,7 +50,18 @@ The global product catalog and inventory data are stored in a PostgreSQL databas
 1. Go to the Supabase Dashboard and log in.
 2. Navigate to your project: https://supabase.com/dashboard/project/ywganhdenzexztzbpkqh
 
-## 💡Getting Started
+## 💡 Design Decisions
+### Stage 1: Local Store Setup for Kiryana Shop
+The inventory system uses a structured relational schema to manage product data, stock levels, and transaction history.
+#### Database Schema 
+This schema was originally designed for a single kiryana (general) store, ensuring efficient and clean handling of inventory operations. Here's a high-level overview of the core tables:
+- **Products**: Stores general product information.
+- **SKUs**: Represents specific product variants like size and color.
+- **Suppliers**: Stores registered suppliers for store.
+- **Inventory**: Tracks stock levels of SKUs.
+- **Stock Logs**: Maintains a record of every stock change (e.g., sales, restocks).
+
+> The schema ensures organized product tracking, variant-level control, and a full history of stock movements — making it perfect for small-scale yet structured inventory systems.
 
 
 

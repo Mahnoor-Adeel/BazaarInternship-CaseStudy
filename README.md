@@ -26,5 +26,15 @@ The system includes a centralized catalog that ensures consistency across all st
   - **Reporting** capabilities for sales and stock analysis.
   - **APIs for transactions**, including sales, stock updates, and inventory adjustments.
 
+## 🚀 Getting Started
+
+To get started with the Inventory System, follow the steps below:
+
+### 1. Clone the Repository
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/YOUR_USERNAME/Inventory-System.git
+cd Inventory-System
+
 
 
